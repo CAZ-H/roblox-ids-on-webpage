@@ -1,0 +1,15 @@
+{
+  "name": "Roblox IDs On Webpage",
+  "short_name": "Roblox IDs On Webpage",
+  "version": "1.0.2",
+  "description": "Puts Roblox user IDs on the group page beside usernames",
+  "manifest_version": 2,
+  "incognito": "spanning",
+  "content_scripts": [
+    {
+      "matches": ["*://*.roblox.com/groups/*"],
+      "js": ["src/index.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
